@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _startUpdateService() async {
     try {
-      //This feature is only availave on the Android OS
+      //This feature is only available on the Android OS
       //As specified above.
 
       if (Platform.isAndroid) {

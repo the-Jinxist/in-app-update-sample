@@ -15,11 +15,11 @@ class UpdateService {
     //Here, you're immediately starting an immediate update
 
     try {
-      //Call and get the result from the initial function
+      //Check for a new update via our already-written private function _checkForUpdate()
       final AppUpdateInfo? info = await _checkForUpdate();
 
-      //Because info could be null. If info is null, we can safely assume that there is no pending
-      //update
+      //Because info could be null. If info is null, we can safely..
+      //assume that there is no pending update
 
       if (info != null) {
         if (info.updateAvailability == UpdateAvailability.updateAvailable) {
